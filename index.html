@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Java Lab Academic Portfolio | J. Vijay Raj</title>
+<meta name="description" content="Java Lab Academic Portfolio of J. Vijay Raj (25EU02080), AI &amp; ML, 2025–29.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230f5e5c'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='%23fff' font-family='serif' font-weight='700'%3EJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('jlap-theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme='light'}</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#home" aria-label="Java Lab Academic Portfolio – home"><span class="logo" aria-hidden="true">J</span><span class="brand-t">Java Lab <small>Portfolio</small></span></a>
+    <nav id="menu" class="menu" aria-label="Primary">
+      <a href="#home" data-s="home">Home</a><a href="#profile" data-s="profile">Profile</a><a href="#weeks" data-s="weeks">Lab Weeks</a><a href="#programs" data-s="programs">Programs</a><a href="#progress" data-s="progress">Progress</a><a href="#about" data-s="about">About</a>
+      <span class="ind" id="ind" aria-hidden="true"></span>
+    </nav>
+    <div class="nav-r">
+      <button class="icon-btn" id="theme" type="button" aria-label="Switch to dark theme"><span aria-hidden="true" id="themeI">☾</span></button>
+      <button class="icon-btn burger" id="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span aria-hidden="true">☰</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-g">
+    <div class="reveal">
+      <p class="eyebrow">Academic Year 2025–29 · Java Lab</p>
+      <h1>Java Lab Academic Portfolio</h1>
+      <p class="sub">J. Vijay Raj <span class="dot">|</span> AI &amp; ML</p>
+      <dl class="idl">
+        <div><dt>Roll No.</dt><dd>25EU02080</dd></div>
+        <div><dt>Branch</dt><dd>AI &amp; ML</dd></div>
+        <div><dt>Faculty</dt><dd>Mr. Dr. Ramesh</dd></div>
+      </dl>
+      <div class="cta"><a class="btn primary" href="#programs">Browse programs</a><a class="btn" href="#weeks">View lab weeks</a></div>
+    </div>
+    <div class="stats reveal" id="heroStats" aria-label="Portfolio statistics"></div>
+  </div>
+</section>
+
+<section id="profile" class="sec">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">01 · Student</p><h2>Student Profile</h2></header>
+    <div class="cards4" id="profileCards"></div>
+  </div>
+</section>
+
+<section id="weeks" class="sec alt">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">02 · Documented work</p><h2>Lab Weeks</h2><p class="lead">Only the weeks present in the submitted Word documents are shown.</p></header>
+    <div class="cards3" id="weekCards"></div>
+  </div>
+</section>
+
+<section id="programs" class="sec">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">03 · Experiments</p><h2>Programs &amp; Experiments</h2><p class="lead">Aim, source code and output screenshots exactly as documented.</p></header>
+    <div class="tools">
+      <div class="search"><label for="q" class="vh">Search programs</label><input id="q" type="search" placeholder="Search week, program no., title, class, topic or keyword…" autocomplete="off"></div>
+      <div class="sel"><label for="topic" class="vh">Filter by topic</label><select id="topic"></select></div>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by week"></div>
+    <p class="count" id="count" aria-live="polite"></p>
+    <div id="list" class="list"></div>
+    <div class="more"><button class="btn" id="more" type="button" hidden>Show more</button></div>
+  </div>
+</section>
+
+<section id="progress" class="sec alt">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">04 · Progress</p><h2>Portfolio Progress</h2><p class="lead">Calculated from the uploaded documents only.</p></header>
+    <div class="prog" id="prog"></div>
+  </div>
+</section>
+
+<section id="journey" class="sec">
+  <div class="wrap">
+    <header class="sh"><p class="eyebrow">05 · Learning journey</p><h2>Java Learning Journey</h2></header>
+    <ol class="tl" id="tl"></ol>
+  </div>
+</section>
+
+<section id="about" class="sec alt">
+  <div class="wrap narrow">
+    <header class="sh"><p class="eyebrow">06 · About</p><h2>About this Portfolio</h2></header>
+    <p class="about">This website documents J. Vijay Raj's Java Lab learning: installation and setup, programs and experiments, their outputs, and the progress made across the documented lab weeks. All content is taken from the student's Java Lab Word documents.</p>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><div class="wrap"><p>© Java Lab Academic Portfolio · J. Vijay Raj · 25EU02080 · AI &amp; ML · 2025–29</p></div></footer>
+<button id="top" class="top" type="button" aria-label="Back to top" hidden>↑</button>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>
